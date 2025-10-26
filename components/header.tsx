@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Menu, ShoppingCart } from "lucide-react"
 import Link from "next/link"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export function Header() {
   return (
@@ -26,6 +27,7 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-4">
+            <ThemeToggle />
             <Button variant="ghost" size="sm" className="hidden md:inline-flex text-foreground">
               Contact Sales
             </Button>
